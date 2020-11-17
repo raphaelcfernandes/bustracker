@@ -19,8 +19,19 @@ const getPatterns = (rt, rtpidatafeed) => {
     })
 }
 
+const getPatternsAndVehicles = async (rt, rtpidatafeed) => {
+    try {
+        const patterns = await getPatterns(rt, rtpidatafeed);
+        const vehicles = await getVehicles(rt)
+        return { patterns, vehicles }
+    } catch {
+        return;
+    }
+}
+
 export {
     getRoutes,
     getVehicles,
-    getPatterns
+    getPatterns,
+    getPatternsAndVehicles
 }

@@ -173,7 +173,7 @@ const App = () => {
     <div >
       <div id="sou gay" style={{ position: "absolute", zIndex: 9, height: "100%" }}>
         <Table head={th} onClick={click} data={availableRoutes} />
-        <button style={{ position: "absolute", top: 0, right: -157 }}>Gosto de penis grosso</button>
+        <button style={{ position: "absolute", top: 0, right: -157 }}>Test button</button>
       </div>
       <div style={{ width: "100vw", height: "100vh" }} ref={mapRef} />
     </div>
